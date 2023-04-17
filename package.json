@@ -1,0 +1,27 @@
+{
+  "name": "times-lib",
+  "version": "0.0.1",
+  "description": "Just a library for converting useful time variables",
+  "main": "Times.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTedZ/times-lib.git"
+  },
+  "keywords": [
+    "Time",
+    "UTCTime",
+    "LocaleTime",
+    "UTCToLocale",
+    "Locale",
+    "UTC"
+  ],
+  "author": "GTedZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GTedZ/times-lib/issues"
+  },
+  "homepage": "https://github.com/GTedZ/times-lib#readme"
+}
