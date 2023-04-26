@@ -100,6 +100,10 @@ class Times {
         return interval - currentMills_after_latest_interval;
     }
 
+    convert_Date_and_Time_to_fileName(date, time = '') {
+        return `${date.split('/').join('.')} ${time.split(':').join(';')}`.trim();
+    }
+
 }
 
 function prepareEventListeners(instance) {
