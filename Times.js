@@ -41,8 +41,8 @@ class Times {
     /**
      * @returns { {datetime:String, date:String, time:String, ISO:String, UTC:String, timestamp:number } } timeObject
      */
-    getUTCTime() {
-        const currentTime_obj = new Date();
+    getUTCTime(customTime) {
+        const currentTime_obj = customTime ? new Date(customTime) : new Date();
 
         const offset = currentTime_obj.getTimezoneOffset();
         const timestamp = currentTime_obj.getTime();
@@ -62,8 +62,8 @@ class Times {
     /**
      * @returns { {datetime:String, date:String, time:String, ISO:String, UTC:String, timestamp:number } } timeObject
      */
-    getLocalTime() {
-        const currentTime_obj = new Date();
+    getLocalTime(customTime = undefined) {
+        const currentTime_obj = customTime ? new Date(customTime) : new Date();
 
         const timestamp = currentTime_obj.getTime();
         const UTCString = currentTime_obj.toUTCString();
